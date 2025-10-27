@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+.maincontainer {
+  text-align: center;
+  padding: 20px;
+  background: #ffffffcc;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 26px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.box {
+  height: 70px;
+  width: 70px;
+  background-color: #f0f8ff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.box:hover {
+  background-color: #d0e3ff;
+  transform: scale(1.05);
+}
+
+.reset {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.new-btn {
+  padding: 10px 20px;
+  margin:10px 50px  ;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.reset:hover,
+.new-btn:hover {
+  background: #574bff;
+}
+
+.winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.winner p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #222;
+}
+.winner button {
+  margin-top: 5px; /* 👈 chhoti si spacing */
+}
+
+.hide {
+  display: none;
+}
